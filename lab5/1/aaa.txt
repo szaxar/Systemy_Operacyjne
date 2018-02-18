@@ -1,0 +1,1 @@
+ls -l |head -n5 |tail -2
