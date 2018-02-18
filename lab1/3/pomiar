@@ -1,0 +1,23 @@
+
+statyczna
+		drzewo 		lista
+stworzenie	0ms		0ms
+dodawanie	67ms		6ms	
+szukanie (opt)	0ms		0ms
+szuakanie (pes)	0ms		2ms	
+kasowanie (opt)	0ms		0ms
+kasowanie (pes)	0ms		2ms
+sortowanie 	101ms		1404ms
+kasowanie 	0ms		6ms
+
+dynamiczna
+		drzewo 		lista
+stworzenie	0ms		0ms
+dodawanie	53ms		5ms	
+szukanie (opt)	0ms		0ms
+szuakanie (pes)	0ms		1ms	
+kasowanie (opt)	0ms		0ms
+kasowanie (pes)	0ms		1ms
+sortowanie 	74ms		832ms
+kasowanie 	0ms		4ms
+
