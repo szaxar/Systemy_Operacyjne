@@ -1,0 +1,94 @@
+Wnioski:
+-Im wiecej rekordow i im sa wieksze program wolniej dziala
+- dla sortowania wariant sys jest szybszy niz lib
+lib : 
+
+			2000:	
+
+					4 :
+real	0m2.852s
+user	0m0.624s
+sys	0m2.096s
+					512:
+real	0m4.677s
+user	0m0.916s
+sys	0m2.920s
+					4096:
+real	0m10.864s
+user	0m2.100s
+sys	0m7.312s
+
+
+					8192:
+real	0m13.353s
+user	0m2.616s
+sys	0m10.304s
+
+			5000		
+					4:
+real	0m15.494s
+user	0m3.668s
+sys	0m11.392s
+
+	
+					512:
+real	0m30.135s
+user	0m5.520s
+sys	0m19.420s
+
+					4096
+real	1m0.109s
+user	0m12.520s
+sys	0m46.792s
+					8192
+real	1m43.759s
+user	0m15.892s
+sys	1m6.904s
+
+
+sys:			
+			2000:	
+					4
+real	0m4.341s
+user	0m0.348s
+sys	0m2.580s
+
+					512
+real	0m5.257s
+user	0m0.384s
+sys	0m2.888s
+
+
+					4096
+real	0m7.873s
+user	0m0.412s
+sys	0m4.848s
+
+					8192
+
+real	0m12.100s
+user	0m0.368s
+sys	0m7.444s
+
+
+			5000
+					4
+real	0m4.384s
+user	0m1.176s
+sys	0m1.432s
+
+					512
+real	0m23.880s
+user	0m2.380s
+sys	0m17.836s
+
+					4096
+real	0m33.171s
+user	0m2.332s
+sys	0m30.176s
+
+					8192
+real	0m49.000s
+user	0m2.648s
+sys	0m45.792s
+
