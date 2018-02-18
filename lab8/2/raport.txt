@@ -1,0 +1,45 @@
+a)1. Wysłanie sygnału do procesu, gdy żaden wątek nie ma zamaskowanego tego sygnału
+-(do watku) Wszystkie sygnaly doszly do watkow 
+- do calego procesu doszly wszystkie sygnaly
+
+2.2. Wysłanie sygnału do procesu, gdy główny wątek programu ma zamaskowany ten sygnał, a wszystkie pozostałe wątki nie
+
+-(do watku)
+SIGUSR1 i SIGTERM nie daje żadnego rezultatu.
+SIGKILL i SIGSTOP dochodza .
+
+- do calego
+SIGUSR1 i SIGTERM nie daje żadnego rezultatu.
+SIGKILL i SIGSTOP dochodza
+
+
+3. Wysłanie sygnału do procesu, gdy wszystkie wątki mają zainstalowaną niestandardową procedurę obsługi przerwania, która wypisuje informację o nadejściu tego sygnału oraz PID i TID danego wątku
+-(do watku)
+SIGUSR1 i SIGTERM wypisuja pid i tid  
+
+- do calego
+SIGUSR1 i SIGTERM wypisuja pid i tid 
+
+4. Wysłanie sygnału do wątku z zamaskowanym tym sygnałem
+-(do watku)
+SIGUSR1 i SIGTERM nie daje żadnego rezultatu.
+SIGKILL i SIGSTOP dochodza
+
+- do calego
+SIGUSR1 i SIGTERM nie daje żadnego rezultatu.
+SIGKILL i SIGSTOP dochodza
+ 
+5. Wysłanie sygnału do wątku, w którym zmieniona jest procedura obsługi sygnału, jak przedstawiono w punkcie 3
+-(do watku)
+SIGUSR1 i SIGTERM wypisuja pid i tid  
+
+- do calego
+SIGUSR1 i SIGTERM wypisuja pid i tid 
+
+b) Dzielenie przez zero
+Wszystkie wątki zostają zabite. 
+
+Linux szaxar-VirtualBox 4.4.0-75-generic #96-Ubuntu SMP Thu Apr 20 09:56:33 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+Intel i7-6700HQ 8 watkowy 
+4.4.0-75-generic #96-Ubuntu SMP Thu Apr 20 09:56:33 UTC 2017
+
